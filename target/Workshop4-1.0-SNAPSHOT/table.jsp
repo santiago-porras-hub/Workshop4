@@ -1,8 +1,12 @@
-
+<%@ page import="java.util.Locale" %>
+<%@ page import="java.util.Random" %>
+<%@ page import="java.util.Objects" %>
+<%@ page import="java.security.SecureRandom" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>TABLAS  </title>
+    <title> TABLAS </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
@@ -18,14 +22,16 @@
         String name = request.getParameter("userName");
         out.print("Welcome: "+name);
 
+
         Cookie c1 = new Cookie("userName", request.getParameter("userName"));
-        Cookie c2 = new Cookie("UserPassword",  request.getParameter("UserPassword"));
+
 
         response.addCookie(c1);
-        response.addCookie(c2);
+
+
+
         out.println("<br />");
         out.print("<a href='welcome'> Too see Details (Cookies) please tap here </a> ");
-
 
 
     } else
@@ -35,6 +41,8 @@
 
 
 <table >
+
+    <form  class="border p-3 form" action="charge">
     <tr>
         <td>Description for image :</td>
         <td><textarea name="comentarios" rows="10" cols="40"> Write Here..</textarea></td>
@@ -42,7 +50,7 @@
 
     <tr>
         <td>
-            <input type="file" id="file" accept="image/*" onchange="mostrar()"/>
+            <input type="file" id="Foto" accept="image/*" onchange="mostrar()"/>
             <br>
             <img id="img"/>
         </td>
@@ -54,7 +62,6 @@
 
 
 </table>
-
 
 
 </body>

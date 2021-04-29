@@ -42,7 +42,7 @@
 
 <table >
 
-    <form  class="border p-3 form" action="charge">
+    <form  class="border p-3 form" action="charge" method="post" enctype="multipart/form-data">
     <tr>
         <td>Description for image :</td>
         <td><textarea name="comentarios" rows="10" cols="40"> Write Here..</textarea></td>
@@ -50,18 +50,17 @@
 
     <tr>
         <td>
-            <input type="file" id="Foto" accept="image/*" onchange="mostrar()"/>
+            <input type="file" id="Foto" name="file" accept="image/*" onchange="mostrar()"/>
             <br>
             <img id="img"/>
         </td>
 
     </tr>
 <td>
-    <button type="submit" class="btn btn-primary">SUBMIT</button>
-</td>
-
+    <button type="submit" >SUBMIT</button>
 
 </table>
+
 
 
 </body>

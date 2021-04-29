@@ -20,14 +20,11 @@
         out.println("<br />");
 
         String name = request.getParameter("userName");
-        out.print("Welcome: "+name);
 
 
         Cookie c1 = new Cookie("userName", request.getParameter("userName"));
 
-
         response.addCookie(c1);
-
 
 
         out.println("<br />");
@@ -39,13 +36,15 @@
 
 %>
 
-
 <table >
 
     <form  class="border p-3 form" action="charge" method="post" enctype="multipart/form-data">
     <tr>
         <td>Description for image :</td>
         <td><textarea name="comentarios" rows="10" cols="40"> Write Here..</textarea></td>
+        <%
+
+        %>
     </tr>
 
     <tr>
@@ -60,6 +59,7 @@
     <button type="submit" >SUBMIT</button>
 
 </table>
+
 
 
 

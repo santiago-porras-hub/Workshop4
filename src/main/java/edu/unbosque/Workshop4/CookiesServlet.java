@@ -10,13 +10,13 @@ import java.io.PrintWriter;
 import java.util.Random;
 
 @WebServlet( name="welcome", value="/welcome")
-public class Servlet1 extends HttpServlet {
+public class CookiesServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) {
 
         response.setContentType("text/html");
 
-        String mamon = "";
+        String comentarios = request.getParameter("comentarios");
 
         try {
             Cookie[] cookies = request.getCookies();

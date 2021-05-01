@@ -1,5 +1,6 @@
 package edu.unbosque.Workshop4;
 
+import javax.ejb.Singleton;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
@@ -10,7 +11,7 @@ import java.io.InputStream;
 import java.nio.file.Paths;
 @WebServlet("/charge")
 @MultipartConfig
-
+@Singleton
 public class ImagenServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

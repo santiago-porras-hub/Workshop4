@@ -14,16 +14,11 @@ public class FormServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-       lista list = new lista();
-
-        List<lista> list2 = new ArrayList<>();
 
         response.setContentType("text/html");
 
         String name = request.getParameter("name");
-        list.setName(name);
 
-        list2.add(list);
 
         response.sendRedirect("./index.jsp");
     }

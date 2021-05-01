@@ -1,7 +1,6 @@
-<%@ page import="java.util.Locale" %>
-<%@ page import="java.util.Random" %>
-<%@ page import="java.util.Objects" %>
 <%@ page import="java.security.SecureRandom" %>
+<%@ page import="edu.unbosque.Workshop4.lista" %>
+<%@ page import="java.util.*" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -43,7 +42,15 @@
         <td>Description for image :</td>
         <td><textarea name="comentarios" rows="10" cols="40"> Write Here..</textarea></td>
         <%
+            lista list = new lista();
 
+            List<lista> list2 = new ArrayList<>();
+
+
+            String comentario="asdasdasdsd";
+            list.setName(comentario);
+
+            list2.add(list);
         %>
     </tr>
 

@@ -14,12 +14,5 @@
     <title>FORMULARIO2</title>
 </head>
 <body>
-<script>
-    <table>
-        For (int x=0;x<col;x++){
-        out.p..(<tr>)
-        for(int y=0;y<fil;y++){
-        out.pri(<td>)
-</script>
 </body>
 </html>

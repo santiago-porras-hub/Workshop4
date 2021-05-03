@@ -19,7 +19,6 @@ public class FormServlet extends HttpServlet {
 
         String name = request.getParameter("name");
 
-
         response.sendRedirect("./index.jsp");
     }
 

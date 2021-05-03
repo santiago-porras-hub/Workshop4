@@ -5,6 +5,15 @@ public  class lista {
     String name = "";
     String comentario ="";
 
+    public lista(String name, String comentario) {
+        this.name = name;
+        this.comentario = comentario;
+    }
+
+    public lista() {
+
+    }
+
     public String getName() {
         return name;
     }

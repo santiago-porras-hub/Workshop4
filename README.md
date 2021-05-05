@@ -1,1 +1,3 @@
 # Workshop4
+Cambios importantes:
+Retomamos el commit de Updat JSON por errores desconocidos y ajenos a nuestras habilidades de simples mortales... 
